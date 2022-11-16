@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">FRONTEND ЧАСТЬ</h1>
+    <h2 class="text-center">Задание 1</h2>
+    <p class="text-center">
+        Внутри блока div заданной ширины и высоты (200 на 300 пикселей) находится изображение img.
+        Необходимо сделать вертикальное и горизонтальное выравнивание картинки внутри блока div.
+            Размеры изображения не известны. Картинка должна быть обязательно тегом img
+            Напишите код реализации (желательно без использования Flexbox)
+    </p>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Выберите изображение</label>
+                <input class="form-control" type="file" id="upload_file">
+            </div>
+            <div class="block">
+                <img src="" alt="Изображение" id="image" />
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Задание 2</h2>
+    <p class="text-center">
+        Горизонтальное меню сайта реализовано на тегах ul>li>a.
+        Напишите код (желательно без использования Flexbox) равномерного выравнивание пунктов горизонтального меню по ширине (одинаковые отступы между блоками) контейнера.
+
+    </p>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Задание 3</h2>
+    <p class="text-center">
+        Имеется двухуровневое горизонтальное меню.
+        Напишите код плавного появления и исчезновение второго (выпадающего) уровня меню при наведении на пункт меню первого уровня.
+    </p>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="nav-menu">
+                <ul class="topmenu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Продукция</a>
+                        <ul class="submenu">
+                            <li><a href="#">Телефоны</a></li>
+                            <li><a href="#">Компьютеры</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Задание 4</h2>
+    <p class="text-center">
+        Напишите код, который позволяет получить и вывести в консоль jquery-элементы с data-атрибутом ID
+    </p>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="block-elem">
+                <div class="box" data-id ="1">1</div>
+                <div class="box" data-id ="2">2</div>
+                <div class="box" data-id ="3">3</div>
+                <div class="box">4</div>
+                <div class="box" data-id ="5">5</div>
+                <div class="box">6</div>
+            </div>
+            <small class="text-center">*Результат в консоли</small>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" id="search_btn">Найти элементы по атрибуту</button>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Задание 5</h2>
+    <p class="text-center">
+        Необходимо отсортировать элементы класса .class по высоте и вывести их в по убыванию высоты в родителе .parent
+        Напишите код.
+    </p>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="parent">
+                <div class="class" style="height:50px;" data-height=50>1</div>
+                <div class="class" style="height:25px;" data-height=25>2</div>
+                <div class="class" style="height:32px;" data-height=32>3</div>
+                <div class="class" style="height:80px;" data-height=80>4</div>
+                <div class="class" style="height:40px;" data-height=40>5</div>
+                <div class="class" style="height:60px;" data-height=60>6</div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" id="sort_btn">Сортировать</button>
+                <button type="button" class="btn btn-danger" id="cancel_btn">Сброс</button>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Задание 6</h2>
+    <p class="text-center">
+        Необходимо скрывать элементы с data-атрибутом noprint при печати страницы.
+        Напишите код.
+    </p>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="print-block">
+                <div class="box">1</div>
+                <div class="box" data-print="noprint">2</div>
+                <div class="box" data-noprint="noprint">3</div>
+                <div class="box" data-print="noprint">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("#upload_file").change(function(e) {  e.preventDefault(); previewImage(this.files) });
+
+        $("#search_btn").on('click',function() {
+            console.log($(".box[data-id]"));
+        })
+
+        $("#sort_btn").on('click',function() {
+            var elems=$(".class");
+            elems.sort(function(a, b){
+                return $(a).attr('data-height') < $(b).attr('data-height')?1:-1;
+            })
+            $(".class").remove();
+            for (let i=0; i<elems.length;i++) {
+                $(".parent").append(elems[i]);
+            }
+        })
+
+        $("#cancel_btn").on('click',function() {
+            $(".class").remove();
+            let html = '<div class="class" style="height:50px;" data-height=50>1</div>'+
+                '<div class="class" style="height:25px;" data-height=25>2</div>'+
+                '<div class="class" style="height:32px;" data-height=32>3</div>'+
+                '<div class="class" style="height:80px;" data-height=80>4</div>'+
+                '<div class="class" style="height:40px;" data-height=40>5</div>'+
+                '<div class="class" style="height:60px;" data-height=60>6</div>';
+            $(".parent").append(html);
+
+        })
+    });
+    function previewImage(file){
+        let img = file[0];
+        let allowed_extensions = ['jpg','png','gif','jpeg'];
+        let ext = img.name.split('.').pop().toLowerCase().trim();
+        if (allowed_extensions.indexOf(ext) == -1) {
+            alert(`Загружаемый файл "${img.name}" имеет недопустимый формат ${ext}, допустимые форматы: ${allowed_extensions.join(', ')}`);
+            return;
+        }
+        let reader = new FileReader();
+        reader.readAsDataURL(img);
+        reader.onload = function(e) {
+            $("#image").attr('src', e.target.result);
+        }
+        reader.onerror = function() {
+           alert("Ошибка обработки файла");
+        }
+    }
+</script>
+</body>
+</html>
