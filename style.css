@@ -1,0 +1,139 @@
+body{
+    margin-bottom: 100px;
+}
+/* 1 ЗАДАНИЕ */
+.block{
+    width:200px;
+    height:300px;
+    border: 1px solid black;
+    margin:auto;
+    position:relative;
+}
+#image{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* 2 ЗАДАНИЕ */
+#menu {
+    background-color: #32343a;
+    height: 64px;
+}
+#menu > ul {
+    padding: 0px;
+    text-align: justify;
+}
+#menu > ul:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+#menu > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    zoom:1;
+}
+#menu > ul > li a {
+    color:#fff;
+    text-decoration: none;
+}
+#menu li:hover {
+    background-color: #CE6E29;
+}
+
+/* 3 ЗАДАНИЕ */
+.nav-menu {
+    background-color: #2c3e50;
+    text-align: center;
+}
+.nav-menu a {
+    text-decoration: none;
+    display: block;
+    transition: .5s linear;
+}
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu > li {
+    display: inline-block;
+
+    position: relative;
+    width: 200px;
+}
+.topmenu > li > a {
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+
+}
+.nav-menu li:hover {
+    background-color: #e74c3c;
+}
+.submenu {
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .5s ease-in-out;
+    background-color: #2c3e50;
+}
+.submenu li {
+    position: relative;
+    margin:2px;
+}
+.submenu a {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+.nav-menu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.submenu li > a:hover {
+    color:#e74c3c;
+}
+/* 4 ЗАДАНИЕ */
+.box{
+    width:100px;
+    height:100px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+}
+/* 5 ЗАДАНИЕ */
+
+.class{
+    width:20px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    vertical-align: bottom;
+}
+/* 6 ЗАДАНИЕ */
+@media print
+{
+    [data-print="noprint"],[data-noprint]
+    {
+        display: none !important;
+    }
+}
